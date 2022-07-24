@@ -1,0 +1,1 @@
+export { Publicacion } from "../pages/publicacion/Publicacion";

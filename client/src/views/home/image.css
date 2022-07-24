@@ -1,0 +1,21 @@
+.rotate {
+  background-color: transparent;
+  transform: rotate(-10deg);
+}
+.rotate1 {
+  background-color: transparent;
+  transform: rotate(3deg);
+}
+
+.rotate2 {
+  background-color: transparent;
+  transform: rotate(-6deg);
+}
+
+.appback{
+  background-image: url("../../imagenes/cordoba.png");
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
