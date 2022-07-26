@@ -1,14 +1,12 @@
-.appback1 {  
-  background: #acb6e5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.appback {  
+  background: rgb(250,237,234);
+background: radial-gradient(circle, rgba(250,237,234,1) 21%, rgba(242,243,247,1) 45%);
 }
 
-.appback3 {
-  background: #FDC830;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
+.appback1 {
+  background: rgb(215,223,230);
+background: radial-gradient(circle, rgba(215,223,230,1) 0%, rgba(240,243,246,1) 100%)
+ }
 
 
 .appback4 {

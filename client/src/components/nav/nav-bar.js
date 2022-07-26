@@ -7,10 +7,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {NavLink} from "react-router-dom";
+import { BsHouseFill } from "react-icons/bs";
 
 const NavBarBarra = () => {
   return (
-    <Navbar bg="light" variant="light">
+    <Navbar bg="dark" variant="dark">
     <Container>
       <Navbar.Brand href="#home">          
          <NavLink
@@ -18,7 +19,8 @@ const NavBarBarra = () => {
             exact
             className="nav-link"
             activeClassName="router-link-exact-active"
-          >InmoProf</NavLink>
+            text-color="white"
+          ><BsHouseFill/> InmoProf</NavLink>
     </Navbar.Brand> 
         <Nav className="me-auto">
             <MainNav />          

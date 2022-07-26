@@ -1,20 +1,15 @@
-import { useHistory, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import {Container, Row, Col} from 'react-bootstrap';
-import { MdOutlineBedroomChild, MdMeetingRoom, MdOutlineBathroom } from "react-icons/md";
-import { BsBuilding } from "react-icons/bs";
 
-
-export function PostCard({ post }) {
+export function PostCardpre({ post }) {
   const navigate = useHistory();
   return (
     <div>
-      {(post.habilitada==="pub") && <div>
+      {(post.habilitada==="pre") && <div>
         
-      <div className="p-3 m-2 bg-light shadow rounded hover-overlay" onClick={() => navigate(`/posts/${post._id}`)}>
-        <Link to={`/posts/${post._id}`}>Publicacion</Link>
-        <Card style={{ width: '67rem' }} className='text-center '>
-
+      <div className="px-1 my-1 shadow p-1 mb-1 bg-white rounded" onClick={() => navigate(`/posts/${post._id}`)}>
+      <Card style={{ width: '70rem' }} className='text-center ' >
         <Card.Body>
           <Container>  
             <Row>
@@ -38,8 +33,8 @@ export function PostCard({ post }) {
             </Row>
              <Row>
               <Col sm={2}>
-                <Card.Text>
-                 <MdMeetingRoom/> {post.ambientes}amb.
+                <Card.Text>Hambientes: 
+                {post.ambientes}
                   </Card.Text>
               </Col>
               <Col sm={3}>m2 Const:
@@ -47,26 +42,17 @@ export function PostCard({ post }) {
               </Col>              
             </Row>
             <Row>  
-              <Col sm={2}>
-              <MdOutlineBedroomChild/>{post.habitaciones} hab.
+              <Col sm={2}>Hambitaciones:
+                {post.habitaciones}
               </Col>
               <Col sm={3}>m2 Const:
                 {post.metrosterreno}
-              </Col>
-              
-                       
-            </Row>
-            <Row>
-              <Col sm={2}>
-                <MdOutlineBathroom/>{post.banos} ban.
-              </Col>   
-              <Col sm={2}>                
-                <BsBuilding/>{post.plantas} pisos
-              </Col>  
-
-            </Row>
+              </Col>              
+              </Row>
             <Row>  
-              
+              <Col sm={2}>Plantas:
+                {post.plantas}
+              </Col>
               <Col sm={3}>                
               </Col>
               <Col sm={2}>
@@ -82,24 +68,15 @@ export function PostCard({ post }) {
             <Row>              
             </Row>           
             <Row>
-              <Col sm={4} className="p-1 mb-2 bg-light text-secondary">
+              <Col sm={4} className="p-1 mb-2 bg-secondary text-white">
                 usuario: {post.usuario}
               </Col>
               <Col sm={4}></Col>
-              <Col sm={4} className="text-secondary text-small">cod. pub.: {post._id}</Col>
+              <Col sm={4} className="text-black-50">cod. pub.: {post._id}</Col>
             </Row>
           </Container>
         </Card.Body>
-
-
-
-        
-      </Card>  
-      
-      
-      
-        
-         
+      </Card>      
     </div>
 
 
