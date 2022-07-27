@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "boos2": "file:..",
+    "boos3": "file:..",
     "boostrap": "^2.0.0",
     "bootstrap": "^5.2.0",
     "formik": "^2.2.9",
